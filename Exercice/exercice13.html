@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table border="2" width="50%">
+        <tr>
+            <th colspan="2">
+                <h1>Registration Form</h1>
+            </th>
+        </tr>
+        <tr>
+            <td align="center">
+                <label for="name">Enter Name</label>
+            </td>
+            <td>
+                <input type="text" id="name" placeholder="ex: Gabriel">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <label for="password">Enter Password</label>
+            </td>
+            <td>
+                <input type="password" id="password">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <label for="adress">Enter Adress</label>
+            </td>
+            <td>
+                <textarea id="adress"  placeholder="ex: 20, Omario Street , CA. USA"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="middle">
+                <label>Select Game</label>
+            </td>
+            <td>
+                <div><input type="checkbox" id="game-0" /> <label for="game-0">Hockey</label></div>
+                <div><input type="checkbox" id="game-1" /> <label for="game-1">Footbal</label></div>
+                <div><input type="checkbox" id="game-2" /> <label for="game-2">Badminton</label></div>
+                <div><input type="checkbox" id="game-3" /> <label for="game-3">Cricket</label></div>
+                <div><input type="checkbox" id="game-4" /> <label for="game-4">VolleyBall</label></div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <label>Gender</label>
+            </td>
+            <td>
+                <input type="radio" id="male" name="sexe"> <label for="male">Male</label>
+                <input type="radio" id="female" name="sexe"> <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="age">Select Your Age</label>
+            </td>
+            <td>
+                <select id="age">
+                    <option value="" selected>Select</option>
+                    <option>10</option>
+                    <option>13</option>
+                    <option>16</option>
+                    <option>17</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="photo">Select Photo</label>
+            </td>
+            <td>
+                <input type="file"  id="photo">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button type="button">Click Me</button><button type="reset">Réinitalise</button><button type="submit">Submit Form</button>
+            </td>
+        </tr>
+
+
+    </table>
+
+</body>
+
+</html>
