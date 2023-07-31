@@ -13,7 +13,7 @@
     <legend>Information Personelle</legend>
     <label for="Nom">Nom</label> <input type="text"  id="Nom" placeholder="Nom">
     <label for="prenom">Prénom</label> <input type="text"  id="prenom" placeholder="Prénom">
-    <label for="pays">Pays</label> <input type="text"  value="France" id="pays" placeholder="Pays">
+    <label for="pays">Pays</label> <input type="text"  value="France"  list="payslist" id="pays" placeholder="Pays">
     <label for="age">Nom</label> <input type="number"  id="age" min="0" max="99">
     <label for="date">Date de naissance</label> <input type="date"  id="date" >
     <input type="time"  id="">
@@ -60,5 +60,15 @@
 <button type="submit">Enoyer</button>
     </form>
     
+
+
+
+    <datalist id="payslist">
+        <option value="fr">France</option>
+        <option value="ma">Maroc</option>
+        <option value="es">Espagne</option>
+        <option value="gr">Allemagne</option>
+        <option value="CA">Canada</option>
+    </datalist>
 </body>
 </html>
