@@ -8,23 +8,30 @@
 <body>
 
     <form>
-        Nom:
-        <input type="text" maxlength="4" required> <br/>
 
-        <input type="file">  <br/>
-
-        <input type="radio" name="langue" id="lang-fr" checked>
-        <label for="lang-fr">Francais</label>
-        
-          <input type="radio" name="langue" id="lang-en">
-          <label for="lang-en">Anglais</label>  <br/>
-
-        <input type="checkbox" id="langc-fr" checked >
-        <label for="langc-fr">Francais</label>
-        <input type="checkbox" id="langc-en">
-        <label for="langc-en">Anglais</label>  <br/>
-        Email:
-        <input type="email" /><br/>
+        <fieldset>
+            <legend>Informations Personelle: </legend>
+            Nom:
+            <input type="text" maxlength="4" required> <br/>
+    
+            <input type="file">  <br/>
+    
+            <input type="radio" name="langue" id="lang-fr" checked>
+            <label for="lang-fr">Francais</label>
+            
+              <input type="radio" name="langue" id="lang-en">
+              <label for="lang-en">Anglais</label>  <br/>
+    
+            <input type="checkbox" id="langc-fr" checked >
+            <label for="langc-fr">Francais</label>
+            <input type="checkbox" id="langc-en">
+            <label for="langc-en">Anglais</label>  <br/>
+            Email:
+            <input type="email" /><br/>
+    
+        </fieldset>
+       
+        <input type="range" min="0" max="100" step="10" name="" id="">
         Password:
         <input type="password" maxlength="6" /><br/>
 
