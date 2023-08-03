@@ -1,0 +1,52 @@
+body{
+    font-family: 'Montserrat';
+    background-color: #eee;
+}
+h1,h2,h3{
+    text-align: right;
+    color:grey;
+    /* text-decoration: underline; */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 10px;
+    border-bottom: solid 1px #ddd;
+    padding: 20px;
+    /* word-spacing: 50px; */
+}
+h4{
+    font-size: 22pt;
+    color:#c06a3f;
+    border-left: solid 1px #c06a3f;
+    padding-left: 80px;
+}
+.new-arrivals span{
+    font-weight: bold;
+    color:rgb(87, 160, 23);
+    cursor: pointer;
+}
+.new-arrivals > li {
+
+    padding:10px ;
+}
+.new-arrivals > li:hover{
+    color :rgb(127, 21, 11);
+    cursor: default;
+}
+.imports li {
+    padding: 7px;
+}
+.imports > li > a{
+    font-size: 18pt;
+    color: #c06a3f;
+    font-weight: bold;
+}
+.imports ul li{
+    font-size: 12pt;
+    font-weight: normal;
+    transition: background-color 2s;
+}
+.imports ul > li:hover{
+    background-color: #c06a3f;
+    color: white;
+
+}

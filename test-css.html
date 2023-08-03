@@ -75,7 +75,7 @@
         </article>
     </div>
 
-    <div>
+    <div style="color:red;background-color: yellow;">
         <article>
             <h1>Third Article</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi nemo ab quas repudiandae ullam saepe at? Ipsum quaerat nemo porro dicta, dolores excepturi inventore beatae voluptatem corrupti fugit. Culpa, rem!</p>
@@ -85,12 +85,16 @@
     <div class="f-article c-article">
         <article >
             <h1>Fourth Article</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi nemo ab quas repudiandae ullam saepe at? Ipsum quaerat nemo porro dicta, dolores excepturi inventore beatae voluptatem corrupti fugit. Culpa, rem!</p>
+            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi nemo ab quas repudiandae ullam saepe at? Ipsum quaerat nemo porro dicta, dolores excepturi inventore beatae voluptatem corrupti fugit. Culpa, rem!</p>
         </article>
     </div>
    
 
     <style>
+
+        body{
+            background-image: url(/assets/img/bg-1.jpg);
+        }
         
       body >  #f-article{
             background-color: red;
@@ -104,16 +108,26 @@
             color:white;
             padding: 50px;
             margin: 50px;
+            transition: background-color 2s,color 1s;
            
         }
         .c-article h1{
             text-decoration: underline;
             font-size: 36pt;
             font-family: 'Calibri';
+            color: white !important;
         }
         .c-article p{
             font-weight: bold;
         }
+        .c-article:hover{
+            background-color: #5fd1a2;
+            color:grey;
+        }
+      
+        
+     
+        
 
 
     </style>
