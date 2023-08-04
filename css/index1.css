@@ -1,10 +1,13 @@
-body{
+body {
     font-family: 'Montserrat';
     background-color: #eee;
 }
-h1,h2,h3{
+
+h1,
+h2,
+h3 {
     text-align: right;
-    color:grey;
+    color: grey;
     /* text-decoration: underline; */
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -13,76 +16,48 @@ h1,h2,h3{
     padding: 20px;
     /* word-spacing: 50px; */
 }
-h4{
+
+h4 {
     font-size: 22pt;
-    color:#c06a3f;
+    color: #c06a3f;
     border-left: solid 1px #c06a3f;
     padding-left: 80px;
 }
-.new-arrivals span{
+
+.new-arrivals span {
     font-weight: bold;
-    color:rgb(87, 160, 23);
+    color: rgb(87, 160, 23);
     cursor: pointer;
 }
-.new-arrivals > li {
 
-    padding:10px ;
+.new-arrivals>li {
+
+    padding: 10px;
 }
-.new-arrivals > li:hover{
-    color :rgb(127, 21, 11);
+
+.new-arrivals>li:hover {
+    color: rgb(127, 21, 11);
     cursor: default;
 }
+
 .imports li {
     padding: 7px;
 }
-.imports > li > a{
+
+.imports>li>a {
     font-size: 18pt;
     color: #c06a3f;
     font-weight: bold;
 }
-.imports ul li{
+
+.imports ul li {
     font-size: 12pt;
     font-weight: normal;
     transition: background-color 2s;
 }
-.imports ul > li:hover{
+
+.imports ul>li:hover {
     background-color: #c06a3f;
     color: white;
 
 }
-    dl {
-        font-weight: bold;
-        font-size: 12pt;
-        color: #c06a3f;
-        margin: 10px;
-        padding: 30px;
-        background-color: #ddd;
-        transition: background-color 4s;
-
-
-    }
-    dl :hover{
-        color: aqua;
-        cursor: default;
-
-    }
-    dt, dt> a {
-        text-decoration: underline;
-        color: black;
-        cursor: pointer;
-    }
-
-    dl {
-
-        border-left: solid 1px #413f431e;
-
-
-    }
-
-    p {
-
-        text-decoration: underline;
-        color: crimson;
-        font-weight:normal;
-        margin: 20px;
-    }

@@ -1,0 +1,45 @@
+table{
+    width: 100%;
+    border: solid 1px;
+    font-family: Calibri;
+}
+thead > tr{
+    background-color: rgb(255, 213, 0);
+    
+}
+thead > tr > th 
+{
+    padding: 10px;
+    text-align: left;
+  
+    font-size:16pt;
+}
+tbody > tr:nth-child(even){
+    background-color: #eee;
+}
+tbody > tr > td{
+    padding: 10px;
+}
+tbody > tr:hover{
+    background-color: rgba(255, 213, 0,0.8);
+}
+tbody button{
+    padding: 10px 30px;
+    border:none;
+    font-weight: bold;
+  background-color: rgb(15, 187, 226);
+    color:white;
+}
+tbody button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+button.add{
+    background-color:rgb(40, 153, 40);
+}
+button.modify{
+    background-color:rgb(207, 195, 27);
+}
+button.delete{
+    background-color: rgb(201, 64, 64);
+}
