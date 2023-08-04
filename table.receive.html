@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        $(document).ready(function(){
+        var url = document.location.href.split('?')[1];
+        url.split('&').forEach((v)=>{
+            var tab = v.split('=');
+            switch(tab[0]){
+                case 'company': $('#company').html(decodeURIComponent(tab[1]));
+                break;
+                case 'name': $('#name').html(decodeURIComponent(tab[1]));
+                break;
+                case 'country': $('#country').html(decodeURIComponent(tab[1]));
+                break;
+            }
+        });
+
+        });
+    </script>
+</head>
+<body>
+
+   
+<div class="card">
+    <img src="img.jpg" alt="John" style="width:100%">
+    <h1 id="name">John Doe</h1>
+    <p id="company">CEO & Founder, Example</p>
+    <p id="country">Harvard University</p>
+    <a href="#"><i class="fa fa-dribbble"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <p><button>Contact</button></p>
+  </div>
+    
+</body>
+</html>
