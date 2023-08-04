@@ -50,3 +50,25 @@ h4{
     color: white;
 
 }
+dl {
+    background-color: antiquewhite;
+    padding: 20px;
+}
+dl > span {
+    color: rgb(33, 3, 179);
+    font-size: medium;
+    padding: 20px;
+    pading-right: 400px;
+    cursor: default;
+
+}
+dl > span :hover{
+    cursor: pointer;
+    color: darkcyan;
+    font-weight: bolder;
+    font-size: larger;
+}
+dl dd :hover{
+    color: aqua;
+    transition:background-color 2s;
+}
