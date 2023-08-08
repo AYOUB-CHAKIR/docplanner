@@ -56,6 +56,12 @@ button.delete{
     margin-left: 35%;
     width: 300px;
     font-family: 'Montserrat';
+    box-shadow: 10px 10px 10px  grey;
+}
+.card:hover{
+    background-color:rgba(237, 198, 4);
+    border-color:rgba(255, 213, 0);
+    transition: border 1s , background-color 0.5s;
 }
 .card img {
     width: 150px !important;
@@ -70,11 +76,18 @@ button.delete{
 .card > p{
     font-weight: bold;
 }
-.card  a {
+.card  a:link {
     margin:0px 10px;
     color:rgb(104, 104, 20);
     
 }
+.card  a:visited {
+   
+    color:white;
+ }
+ .card a:active{
+    color:rgb(212, 126, 34);
+ }
 .card button{
     background-color:  rgba(237, 198, 4);
     border-radius: 7px;

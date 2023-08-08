@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        html,body{
+            padding: 0px;
+            margin: 0px;
+            background-color: #eee;
+        }
+        ul{
+            width: 100%;
+            background-color: purple;
+        }
+        nav img{
+            width: 100px;
+        }
+        ul>li{
+            display: inline-block;
+            width: 9%;
+           
+        }
+        nav a {
+            color:white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+        }
+        nav a:hover{
+            transition: background-color 1s;
+            color:purple;
+            background-color: white;
+        }
+        ul > li:nth-child(1){
+            width: 45% !important;
+            vertical-align: middle;
+        }
+    </style>
+
+  <nav>
+    <ul>
+        <li><img src="/assets/img/logo2.png" alt=""></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About-us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+    
+</body>
+</html>
