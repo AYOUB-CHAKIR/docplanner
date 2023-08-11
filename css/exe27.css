@@ -1,0 +1,50 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+.container,nav{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #9a9a9a;
+    flex-wrap: wrap;
+}
+nav > ul {
+    display: flex;
+}
+li{
+    list-style-type: none;
+    flex-basis: 100px;
+    text-align: center;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    color:white;
+    min-width: 100px;
+    padding:10px;
+}
+
+@media screen and (max-width:765px) {
+    .links{
+        flex-wrap: wrap;
+    }
+    .links li{
+        flex:1 0 350px;
+       
+        text-align: center;
+    }
+    .nav{
+        flex-grow:1
+    }
+    .socials {
+        width: 100%;
+        justify-content: center;
+    }
+    .socials li{
+       
+    }
+    
+}
