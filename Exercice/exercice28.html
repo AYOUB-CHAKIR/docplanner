@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.grid{
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,minmax(200px,auto));
+    grid-gap:10px
+}
+.grid>div:nth-child(odd){
+    background-color: red;
+}
+.grid>div:nth-child(even){
+    background-color: orange;
+}
+
+
+
+.grid > div:nth-child(1){
+    grid-column: 1/2;
+    grid-row:1/4;
+    background-color: green;
+}
+.grid > div:nth-child(2){
+    grid-column: 2/4;
+    grid-row:1/2;
+    background-color: green;
+}
+.grid > div:nth-child(6){
+    grid-column:4/5;
+    grid-row:2/4;
+    background-color: green;
+}
+
+
+    </style>
+    
+
+    <div class="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light navbar-expand-sm bg-light ">
+
+        <a href="#" class="navbar-brand">
+            <img src="/assets/img/logo.png" width="100px">
+        </a>
+        <button class="navbar-toggler" data-target="#menu" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">Communication</li>
+                        <li class="dropdown-item">SAV</li>
+                        <li class="dropdown-item">Marketing</li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Apropos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Comptes</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="jumbotron bg-light text-white" style="background-image: url(/assets/img/bg-1.jpg);">
+        <h1 class="display-2 ">Créer votre compte bancaire</h1>
+        <h2 class="h3 ml-3">en quelques clics seulement</h2>
+        <div class="m-3">
+            <button class="btn btn-dark" data-toggle="modal" data-target="#register-form">Créer maintenant</button>
+        </div>
+    </div>
+
+    <div class="modal " id="register-form">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header "">
+                   
+                    <div class=" row w-100">
+                    <div class="col-10">
+                        <h3>Informations de comptes</h3>
+                    </div>
+                    <div class="col-2">
+                        <div class="d-block w-100 text-right">
+                            <button class="btn btn-light" data-toggle="modal" data-target="#register-form"><i
+                                    class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-body w-100">
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6 col-12 form-group">
+                        <label for="name">Nom :</label>
+                        <input type="text"  id="name" class="form-control">
+                    </div>
+                    <div class="col-md-6 col-12 form-group">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text"  id="prenom" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="adresse">Adresse :</label>
+                   <textarea  id="adresse" class="w-100 form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Téléphone :</label>
+                    <input type="text"  id="tel" class="form-control">
+                </div>
+            </form>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#register-form">Close</button>
+                <button class="btn btn-success">Créer</button>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
