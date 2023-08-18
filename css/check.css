@@ -1,0 +1,32 @@
+h1,h2,h3,.h3{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+}
+.primary-color{
+    color:#00b39b !important;
+}
+.box{
+    color:white !important;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    border-radius: 7px;
+    text-align: left;
+    position:relative;
+    min-height: 300px;
+    max-height: 500px;
+}
+.box select{
+    padding: 5px;
+    font-size: 14pt;
+    border:none;
+    color:white;
+    text-decoration: underline;
+}
+.inputs{
+    position: absolute;
+    bottom: 10px;
+}
+.inputs > select
+{
+    margin-top: 10px;
+}
