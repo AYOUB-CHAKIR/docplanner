@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var nom = prompt("Saisir Nom");
+        var prenom = prompt("Saisir prénom");
+        var datedenaissance= prompt("Saisir date de naissance dd/mm/YYYY");
+    
+        var mois = parseInt(datedenaissance.substr(3,2));
+        var anne = parseInt(datedenaissance.substr(6,4));
+        var age = 2023-anne;
+   
+        if(9<mois)
+        {
+            age--;
+        }
+        if(age>=18){
+            var cin = prompt("Saisir votre CIN").padEnd(10,"X");
+                console.log(`
+                ${nom.toUpperCase()}   ${prenom.toUpperCase()}
+                CIN : ${cin}
+                AGE: ${age}
+                `);
+
+        }else{
+            alert("Candidat n'est pas majeur");
+        }
+
+
+    </script>
+    
+</body>
+</html>

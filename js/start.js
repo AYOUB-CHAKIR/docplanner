@@ -37,7 +37,7 @@
 function Nomdelafonction(){
     alert("Bonjour tout le monde depuis la fonction nomdelafonction");
 }
-
+Nomdelafonction();
 function Somme(a,b){
     return parseInt(a)+parseInt(b);
 }
