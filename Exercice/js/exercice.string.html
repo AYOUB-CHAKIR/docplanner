@@ -8,18 +8,35 @@
 <body>
 
     <script>
-        var nom = prompt("Saisir Nom");
-        var prenom = prompt("Saisir prénom");
-        var datedenaissance= prompt("Saisir date de naissance dd/mm/YYYY");
-    
-        var mois = parseInt(datedenaissance.substr(3,2));
-        var anne = parseInt(datedenaissance.substr(6,4));
+
+function DatedeNaissance(date){
+    if(date!=""){
+        var mois = parseInt(date.substr(3,2));
+        var anne = parseInt(date.substr(6,4));
         var age = 2023-anne;
    
         if(9<mois)
         {
             age--;
         }
+        if(age>=18){
+            return age;
+        }else{
+            return DatedeNaissance(prompt(`Age doit être plus de 18 ans
+            Saisir date de naissance dd/mm/YYYY`));
+        }
+    }
+    
+    
+       
+}
+
+
+        var nom = prompt("Saisir Nom");
+        var prenom = prompt("Saisir prénom");
+      
+       var age= DatedeNaissance( prompt("Saisir date de naissance dd/mm/YYYY"));
+       console.log(age);
         if(age>=18){
             var cin = prompt("Saisir votre CIN").padEnd(10,"X");
                 console.log(`
