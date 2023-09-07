@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+var nomdesociete=prompt("Saisir nom de la société");
+var adresse=prompt("Saisir adresse de la société");
+var ville=prompt("Saisir ville de la société");
+var date=prompt("Saisir date du document");
+var nomcomplet=prompt("Saisir le destinataire");
+var applicantname=prompt("Saisir votre nom");
+
+
+var string =`
+${nomdesociete}
+${adresse}
+ 
+${ville}, le ${date}
+ 
+Madame ${nomcomplet}
+ 
+Quam ob rem ut ii qui superiores sunt submittere se debent in amicitia, sic quodam modo inferiores extollere. Sunt enim quidam qui molestas amicitias faciunt, cum ipsi se contemni putant; quod non fere contingit nisi iis qui etiam contemnendos se arbitrantur; qui hac opinione non modo verbis sed etiam opere levandi sunt. 
+Iamque lituis cladium concrepantibus internarum non celate ut antea turbidum saeviebat ingenium a veri consideratione detortum et nullo inpositorum vel conpositorum fidem sollemniter inquirente nec discernente a societate noxiorum insontes velut exturbatum e iudiciis fas omne discessit, et causarum legitima silente defensione carnifex rapinarum sequester et obductio capitum et bonorum ubique multatio versabatur per orientales provincias, quas recensere puto nunc oportunum absque Mesopotamia digesta, cum bella Parthica dicerentur, et Aegypto, quam necessario aliud reieci ad tempus. 
+Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua. 
+Haec igitur Epicuri non probo, inquam. De cetero vellem equidem aut ipse doctrinis fuisset instructior est enim, quod tibi ita videri necesse est, non satis politus iis artibus, quas qui tenent, eruditi appellantur aut ne deterruisset alios a studiis. quamquam te quidem video minime esse deterritum.
+ 
+Dans l’attente de vous rencontrer prochainement, pour pouvoir vous exprimer ma pleine motivation, je vous prie de croire, Madame, Monsieur, à l’expression de mes salutations distinguées.
+${applicantname}
+`;
+console.log(string);
+
+    </script>
+</body>
+</html>
