@@ -43,3 +43,14 @@ function Somme(a,b){
 }
 
 alert("LA somme est  "+ Somme(prompt("Saisir a"),prompt("Saisir b")));
+
+
+const Hello = () => {
+    alert("Hello");
+}
+
+Hello();
+
+const Bonjour = function(){
+    alert("Bonjour");
+}
